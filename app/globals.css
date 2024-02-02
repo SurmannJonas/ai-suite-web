@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+	.custom-gradient {
+		@apply bg-gradient-to-br from-[#161531] via-[#241531] to-[#3d2739];
+	}
+
+	.anchor {
+		overflow-anchor: auto;
+	}
+		h1 {
+			@apply text-3xl font-semibold uppercase my-2;
+		}
+
+}
+
+
