@@ -56,7 +56,8 @@ export default function Home() {
           With regards to the formatting of all vulnerabilities, first order after severity and start with critical first, then please output in the following format:
           [Title]
           Severity: [Critical, Medium, Low]
-          Context: [name of the contract], [exact line of the contract code]
+          Context: [name of the contract], [function]
+          Line of Code: [exact line of the contract code]
           Description: [Description of the issue can include POC]
           Recommendation: [How to fix - propose code changes]
           
