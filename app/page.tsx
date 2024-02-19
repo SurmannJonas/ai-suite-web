@@ -50,29 +50,8 @@ export default function Home() {
           Assume the role of an expert smart contract auditor with a deep understanding of Solidity and EVM (Ethereum Virtual Machine) contracts. When I present you with a smart contract, follow these steps:
 
           Please conduct a thorough analysis of these contracts, focusing on standard tests for common vulnerabilities - only share the relevant ones where you have identified a vulnerability - always leave out the rest. 
-          Here are the specific tests to perform:
-          
-          Reentrancy Attacks: Check if the contracts are susceptible to reentrancy attacks, particularly in functions that make external calls or transfer funds.
-          
-          Arithmetic Overflows and Underflows: Examine the contracts for arithmetic operations, especially those without safeguards like SafeMath, to spot potential overflows and underflows.
-          
-          Gas Limit and Loops: Review any loops and complex computations to assess their gas consumption and ensure they don't exceed block gas limits, risking transaction failures.
-          
-          Visibility of Functions and State Variables: Ensure that all functions and state variables have appropriate visibility set (public, private, internal, external) to prevent unintended access or modification.
-          
-          Delegatecall Vulnerability: Inspect the use of delegatecall to verify it's implemented securely and doesn't inadvertently allow malicious control over contract state.
-          
-          Timestamp Dependence: Check for any critical logic in the contract relying on block timestamps, which can be manipulated by miners to some extent.
-          
-          Unchecked External Calls: Look for external calls and ensure they are properly checked for their return values to handle failed calls effectively.
-          
-          Short Address/Parameter Attack: Ensure the contracts handle input lengths correctly to guard against short address or parameter attacks.
-          
-          Additional Common Vulnerabilities: Scan for any other standard vulnerabilities commonly found in Solidity contracts - only return a result if you found anything.
           
           Report back with a detailed analysis of each test, highlighting any vulnerabilities found or confirming the absence of these issues. Provide recommendations for improvements or fixes where vulnerabilities are identified.
-          
-          Also add additional vulnerabilities based on your expertise.
           
           With regards to the formatting of all vulnerabilities, first order after severity and start with critical first, then please output in the following format:
           [Title]
