@@ -57,7 +57,7 @@ export default function Home() {
           [Title]
           Severity: [Critical, Medium, Low]
           Context: [name of the contract], [function]
-          Line of Code: [exact line of the contract code]
+          Line(s) of Code: [# Number exact line of the contract code - e.g. Line 3 or if multiple then Lines 3 and 21]
           Description: [Description of the issue can include POC]
           Recommendation: [How to fix - propose code changes]
           
